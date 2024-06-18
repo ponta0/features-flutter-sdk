@@ -17,4 +17,5 @@ apt install -y --no-install-recommends \
 
 curl -kLO "$FLUTTER_SDK_URL"
 tar -xf "$FLUTTER_SDK_FILENAME" -C /usr/bin/
+git config --global --add safe.directory /usr/bin/flutter
 rm "$FLUTTER_SDK_FILENAME"
