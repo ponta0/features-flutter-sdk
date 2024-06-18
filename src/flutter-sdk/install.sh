@@ -15,6 +15,6 @@ apt install -y --no-install-recommends \
     zip \
     libglu1-mesa
 
-curl -fLO "$FLUTTER_SDK_URL"
+curl -kLO "$FLUTTER_SDK_URL"
 tar -xf "$FLUTTER_SDK_FILENAME" -C /usr/bin/
 rm "$FLUTTER_SDK_FILENAME"
