@@ -1,0 +1,17 @@
+{
+    "name": "Flutter SDK",
+    "id": "flutter-sdk",
+    "version": "0.1.0",
+    "description": "Install the Flutter SDK",
+    "containerEnv": {
+        "PATH": "/usr/bin/flutter/bin:$PATH"
+    },
+    "options": {
+        "version": {
+            "type": "string",
+            "description": "Flutter SDK version",
+            "proposals": ["3.22.2"],
+            "default": "3.22.2"
+        }
+    }
+}
