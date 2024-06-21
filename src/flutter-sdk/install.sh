@@ -7,6 +7,7 @@ FLUTTER_SDK_URL="https://storage.googleapis.com/flutter_infra_release/releases/s
 export DEBIAN_FRONTEND="noninteractive"
 
 apt update
+apt install -y --reinstall ca-certificates
 apt install -y --no-install-recommends \
     curl \
     git \
@@ -14,10 +15,11 @@ apt install -y --no-install-recommends \
     xz-utils \
     zip \
     libglu1-mesa
-
 apt clean
 
 curl -kLO "$FLUTTER_SDK_URL"
 tar -xf "$FLUTTER_SDK_FILENAME" -C /usr/bin/
 git config --global --add safe.directory /usr/bin/flutter
 rm "$FLUTTER_SDK_FILENAME"
+
+echo 'source <(flutter bash-completion)' >> ~/.bashrc
