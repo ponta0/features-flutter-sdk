@@ -1,11 +1,11 @@
 {
     "name": "Flutter SDK Android Components",
     "id": "flutter-sdk-android",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Install the Flutter SDK Android Components",
     "containerEnv": {
         "ANDROID_HOME": "/usr/lib/android-sdk",
         "PATH": "$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools/bin"
     },
-    "postStartCommand": "flutter doctor --android-licenses"
+    "postStartCommand": "yes y | flutter doctor --android-licenses"
 }
