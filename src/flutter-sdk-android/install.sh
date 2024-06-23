@@ -16,4 +16,4 @@ mkdir -p /usr/lib/android-sdk/cmdline-tools/latest
 mv cmdline-tools/* /usr/lib/android-sdk/cmdline-tools/latest
 rm "${ANDROID_SDK_CMDLINE_TOOLS_FILENAME}"
 rm -r cmdline-tools
-sdkmanager "platform-tools" "platforms;android-33" "build-tools;33.0.2"
+yes y | sdkmanager "platform-tools" "platforms;android-33" "build-tools;33.0.2"
