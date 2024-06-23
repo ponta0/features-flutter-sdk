@@ -7,7 +7,7 @@ export DEBIAN_FRONTEND="noninteractive"
 
 apt update
 apt install -y \
-    ndroid-sdk \
+    android-sdk \
     openjdk-17-jdk
 
 curl "${ANDROID_SDK_CMDLINE_TOOLS_URL}"
